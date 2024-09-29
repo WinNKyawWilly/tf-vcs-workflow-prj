@@ -9,7 +9,7 @@ resource "aws_vpc" "rancher_vpc" {
 resource "aws_subnet" "rancher_subnet" {
   vpc_id = aws_vpc.rancher_vpc.id
 
-  cidr_block        = "10.10.0.0/24"
+  cidr_block        = "10.0.1.0/24"
   availability_zone = var.aws_zone
 
   tags = {
